@@ -11,14 +11,13 @@ let iconURL = 'https://openweathermap.org/img/wn/';
 let weatherIcon = '';
 let weatherInfoRequestPrefix = 'https://api.openweathermap.org/data/2.5/';
 let fiveDayRequestPrefix =
-	'https://api.openweathermap.org/data/2.5/forecast?q='; // + &mode=json
+	'https://api.openweathermap.org/data/2.5/forecast?q=';
 let uviQuery = 'uvi?';
-// let apiKey = '&appid=d5063d29f50830106cfbe3f17f54053f'
-const apiKey = '&appid=' + config.OW_API_KEY;
+let API_KEY = 'd5063d29f50830106cfbe3f17f54053f';
+const apiKey = '&appid=' + API_KEY;
 let searchHistory = {};
 
 $(document).ready(() => {
-	// localStorage.clear();
 	renderSearchHistory();
 });
 
@@ -114,7 +113,6 @@ let getWeatherInformation = (citySearchString) => {
 let validatedSearchString = (city) => {
 	let search = city.split(',');
 	if (search.length > 1) {
-		// make sure neither string is empty
 		let first = search[0].length;
 		let second = search[1].length;
 		if (first === 0 || second === 0) {
@@ -183,7 +181,6 @@ let setFiveDayData = (response) => {
 	}
 };
 
-// TODO: make searchesObj into an array instead of an object
 let saveToLocalStorage = (searchHx) => {
 	return localStorage.setItem('searchHistory', JSON.stringify(searchHx));
 };

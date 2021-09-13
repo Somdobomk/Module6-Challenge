@@ -1,20 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-	font-family: 'Fira Sans';
-	/* color: #ffffff;
-	background-color: #1e1e1e; */
-}
-
-header {
+	font-family: 'Montserrat';
+	color: #ffffff;
 	background-color: #1e1e1e;
 }
 
-.col-2dot4,
-.col-sm-2dot4,
-.col-md-2dot4,
-.col-lg-2dot4,
-.col-xl-2dot4 {
+.five-card-size {
 	position: relative;
 	width: 100%;
 	min-height: 1px;
@@ -22,34 +14,34 @@ header {
 	padding-left: 15px;
 }
 
-.col-2dot4 {
+.col-five-card-size {
 	flex: 0 0 20%;
 	max-width: 20%;
 }
 
 @media (min-width: 540px) {
-	.col-sm-2dot4 {
+	.col-sm-five-card-size {
 		flex: 0 0 20%;
 		max-width: 20%;
 	}
 }
 
 @media (min-width: 720px) {
-	.col-md-2dot4 {
+	.col-md-five-card-size {
 		flex: 0 0 20%;
 		max-width: 20%;
 	}
 }
 
 @media (min-width: 960px) {
-	.col-lg-2dot4 {
+	.col-lg-five-card-size {
 		flex: 0 0 20%;
 		max-width: 20%;
 	}
 }
 
 @media (min-width: 1140px) {
-	.col-xl-2dot4 {
+	.col-xl-five-card-size {
 		flex: 0 0 20%;
 		max-width: 20%;
 	}

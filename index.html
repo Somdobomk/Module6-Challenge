@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="container-fluid">
-    <div class="row justify-content-center text-white">
+    <div class="row text-center text-white">
       <h1>Weather Dashboard</h1>
     </div>
   </header>
@@ -22,13 +22,12 @@
         <div class="input-group mb-2">
           <input type="text" class="form-control" placeholder="City Name">
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" id="city-search" type="button"><i class="fas fa-search"></i></button>
+            <button class="btn btn-outline-secondary bg-secondary text-white" id="city-search" type="button"><i class="fas fa-search"></i></button>
           </div>
         </div>
 
-        <table class="table table-light border">
+        <table class="table table-light">
           <tbody>
-            <tr class="border" id="row0"></tr>
             <tr class="border" id="row1"></tr>
             <tr class="border" id="row2"></tr>
             <tr class="border" id="row3"></tr>
@@ -37,12 +36,13 @@
             <tr class="border" id="row6"></tr>
             <tr class="border" id="row7"></tr>
             <tr class="border" id="row8"></tr>
+            <tr class="border" id="row0"></tr>
             <tr class="border" id="row9"></tr>        
         </table>
       </div>
 
       <div class="col-md-9">
-        <div class="card col-md- mt-4 mb-4">
+        <div class="card col-md mt-4 mb-4 bg-secondary">
           <div id="forecast" class="card-body pl-1 pr-1">
             <div class="row">
               <div id="city-name" class="col-md-auto h4 navbar-text">City Name</div>
@@ -55,16 +55,13 @@
           </div>
         </div>
 
-        <!-- <div class="row">
-        </div> -->
-
         <div id="five-day-title" class="row">
           <h3 class="ml-3">5-Day Forecast</h3>
         </div>
 
         <div id="five-day-cards" class="row">
-          <div class="col-md">
-            <div id="five-day-1" class="card bg-primary text-white mb-1">
+          <div class="col-md five-card-size">
+            <div id="five-day-1" class="card bg-secondary text-white mb-1">
               <div class="card-body">
                 <h6></h6>
                   <img class="weather-icon" height="auto" width="auto">
@@ -74,8 +71,8 @@
           </div>
         </div>
 
-        <div class="col-md-2dot4">
-          <div id="five-day-2" class="card bg-primary text-white mb-1">
+        <div class="col-md five-card-size">
+          <div id="five-day-2" class="card bg-secondary text-white mb-1">
             <div class="card-body">
               <h6></h6>
                   <img class="weather-icon" height="auto" width="auto">
@@ -85,8 +82,8 @@
           </div>
         </div>
 
-        <div class="col-md-2dot4">
-          <div id="five-day-3" class="card bg-primary text-white mb-1">
+        <div class="col-md five-card-size">
+          <div id="five-day-3" class="card bg-secondary text-white mb-1">
             <div class="card-body">
               <h6></h6>
                 <img class="weather-icon" height="auto" width="auto">
@@ -96,8 +93,8 @@
           </div>
         </div>
 
-        <div class="col-md-2dot4">
-          <div id="five-day-4" class="card bg-primary text-white mb-1">
+        <div class="col-md five-card-size">
+          <div id="five-day-4" class="card bg-secondary text-white mb-1">
             <div class="card-body">
               <h6></h6>
                 <img class="weather-icon" height="auto" width="auto">
@@ -107,8 +104,8 @@
           </div>
         </div>
 
-        <div class="col-md-2dot4">
-          <div id="five-day-5" class="card bg-primary text-white mb-1">
+        <div class="col-md five-card-size">
+          <div id="five-day-5" class="card bg-secondary text-white mb-1">
             <div class="card-body">
               <h6></h6>
                 <img class="weather-icon" height="auto" width="auto">
@@ -124,7 +121,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   <script src="https://kit.fontawesome.com/f53a07ee43.js" crossorigin="anonymous"></script>
-  <script src='./assets/js/config.js'></script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
