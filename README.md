@@ -1,6 +1,6 @@
 # Module 6 - Weather Dashboard
 
-# [DEMO](https://somdobomk-module8-challenge.netlify.app/)
+# [DEMO](https://somdobomk-module6-challenge.netlify.app/)
 
 <div align="center">
     <img src="./assets/images/screenshot.gif" width="400px"> 
