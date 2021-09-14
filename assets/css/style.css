@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-	font-family: 'Montserrat';
+	font-family: 'Roboto';
 	color: #ffffff;
 	background-color: #1e1e1e;
 }
 
+.table {
+	background-color: #1e1e1e;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+	background-color: #ffffff;
+}
+
 .five-card-size {
+	font-size: 1.25rem;
 	position: relative;
 	width: 100%;
 	min-height: 1px;
